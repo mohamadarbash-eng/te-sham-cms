@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "courses"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 10,
+      "unique": false
+    }
+  },
+  "connection": "default",
+  "collectionName": "courses"
+}

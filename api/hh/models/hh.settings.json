@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "hh"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fdf": {
+      "type": "richtext"
+    }
+  },
+  "connection": "default",
+  "collectionName": "hhs"
+}
