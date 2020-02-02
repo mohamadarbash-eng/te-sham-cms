@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "hhs",
   "info": {
     "name": "hh"
   },
@@ -9,8 +11,9 @@
   "attributes": {
     "fdf": {
       "type": "richtext"
+    },
+    "email": {
+      "type": "email"
     }
-  },
-  "connection": "default",
-  "collectionName": "hhs"
+  }
 }
