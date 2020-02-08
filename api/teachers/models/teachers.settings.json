@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "teachers",
+  "info": {
+    "name": "teachers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "teacher": {
+      "type": "string"
+    },
+    "courses": {
+      "via": "teacher",
+      "collection": "courses"
+    }
+  }
+}

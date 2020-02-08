@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "units",
+  "info": {
+    "name": "units"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "unit": {
+      "type": "string"
+    },
+    "courses": {
+      "via": "unit",
+      "collection": "courses"
+    }
+  }
+}

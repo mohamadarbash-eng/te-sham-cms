@@ -1,0 +1,18 @@
+{
+  "info": {
+    "name": "description ",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_c_description_s"
+}

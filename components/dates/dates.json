@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_dates_dates",
+  "info": {
+    "name": "dates",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "days": {
+      "type": "string"
+    },
+    "time": {
+      "type": "time"
+    },
+    "end_time": {
+      "type": "time"
+    }
+  }
+}
