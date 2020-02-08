@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "courses",
   "info": {
     "name": "courses"
   },
@@ -7,13 +9,59 @@
     "timestamps": true
   },
   "attributes": {
-    "title": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "title_ar": {
       "type": "string",
       "required": true,
       "minLength": 10,
-      "unique": false
+      "maxLength": 30
+    },
+    "sub_title_ar": {
+      "type": "string",
+      "minLength": 10
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "c.description"
+    },
+    "dates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dates.dates"
+    },
+    "price": {
+      "type": "integer",
+      "min": 1
+    },
+    "start_date": {
+      "type": "datetime"
+    },
+    "categories": {
+      "collection": "hh",
+      "via": "course"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "unit": {
+      "model": "units",
+      "via": "courses"
+    },
+    "teacher": {
+      "model": "teachers",
+      "via": "courses"
+    },
+    "course_id": {
+      "type": "integer",
+      "unique": true,
+      "required": true,
+      "min": 0
     }
-  },
-  "connection": "default",
-  "collectionName": "courses"
+  }
 }

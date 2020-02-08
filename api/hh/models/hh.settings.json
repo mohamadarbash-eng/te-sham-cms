@@ -2,18 +2,19 @@
   "connection": "default",
   "collectionName": "hhs",
   "info": {
-    "name": "hh"
+    "name": "category"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "fdf": {
-      "type": "richtext"
+    "category": {
+      "type": "string"
     },
-    "email": {
-      "type": "email"
+    "course": {
+      "via": "categories",
+      "model": "courses"
     }
   }
 }
